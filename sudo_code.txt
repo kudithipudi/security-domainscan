@@ -1,0 +1,17 @@
+functions
+	read_file(file)
+		open file;
+		for each line
+			process_line(hostname)
+			
+	process_line(hostname)
+		search_google(hostname)
+		write to log
+		
+	search_google (hostname)
+		connect to google api
+		get results for hostname
+		return number of results
+		
+main
+	read_file(input)
